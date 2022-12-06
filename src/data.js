@@ -6,7 +6,7 @@ export  const menuData = [
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRfpZB0_3qGRT0vx7Jlw662goIgQc9en4esg&usqp=CAU",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGTB8X0lJN1Blpe9aos9c8-Oj7lZ0J_pDrgw&usqp=CAU",
   },
   {
     "Error_Rate": 19,
@@ -30,7 +30,7 @@ export  const menuData = [
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOMo8EvRpoYiwsk_Bg0OJmd_0z0JoiTchqQ&usqp=CAU",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIK_KpHGeYHhCb_zRJ4VpW2sPD0z5Ym8Oa8g&usqp=CAU",
   },
   {
     "Error_Rate": 19,

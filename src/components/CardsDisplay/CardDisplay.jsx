@@ -7,7 +7,7 @@ export const CardDisplay = () => {
       <div className="common-flex-row results-block">
         <h4>Results</h4>
         <label for="Sort by">
-          <input placeholder="sort by" />
+         <p> Sort By<input placeholder="sort by" /></p> 
         </label>
       </div>
       <div className=" common-flex-row card-display-container">
