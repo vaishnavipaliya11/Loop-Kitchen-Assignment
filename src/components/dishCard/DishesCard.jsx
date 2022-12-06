@@ -1,7 +1,7 @@
 import "../../styles.css";
 import "./cards.css";
 export const DishCard = ({ data }) => {
-  const { Order_value, numOrder, Error_Rate, Order_volume, Ratings, img } =
+  const { OrderValue, numOrder, Error_Rate, OrderVolume, Ratings, img } =
     data;
   return (
     <div className="common-flex-column product-card-container">
@@ -21,10 +21,10 @@ export const DishCard = ({ data }) => {
         </p>
 
         <p className="common-flex-row description">
-          Order_volume <span>{Order_volume}</span>{" "}
+          Order_volume <span>{OrderVolume}</span>{" "}
         </p>
         <p className="common-flex-row description">
-          Order_value <span> {Order_value}</span>
+          Order_value <span> {OrderValue}</span>
         </p>
         <p className="common-flex-row description">
           Ratings <span> {Ratings}</span>

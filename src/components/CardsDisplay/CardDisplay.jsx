@@ -5,7 +5,7 @@ import { useState } from "react";
 export const CardDisplay = () => {
 
   return (
-    <div className="common-flex-column">
+    <div className="common-flex-column card-display-parent">
       <div className="common-flex-row results-block">
         <h4>Results</h4>
         <label for="Sort by">

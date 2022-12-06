@@ -7,7 +7,7 @@ import {HiPhotograph} from "react-icons/hi"
 
 export const SideBar = ({appliedFilters, setAppliedFilters}) => {
   return (
-    <div className="common-flex-row">
+    <div className="common-flex-row sidebar-parent">
       <div className="sidebar-icons-display common-flex-column">
         <div>
           <h3>
@@ -60,31 +60,49 @@ export const SideBar = ({appliedFilters, setAppliedFilters}) => {
             setAppliedFilters({ ...appliedFilters, maxNoOfOrder: e.target.value })
           }/>
 
-          <h5>Order of value</h5>
-          <input type="range" min="10" max="1000" />
+          <h5>Order of Volume {appliedFilters.maxOrderVolume}</h5>
+          <input type="range" min="10" max="60" 
+          />
 
           <h5>Price range</h5>
-          <input type="range" min="100" max="10000" />
+          <input type="range" min="100" max="2000"
+          onChange={(e) =>
+            setAppliedFilters({ ...appliedFilters, dishPrice: e.target.value })
+          } />
         </div>
         <div>
           <h5>Ratings</h5>
           <div className="rating-icons">
-            <input type="checkbox" />
+            <input type="checkbox" 
+             onChange={(e) =>
+            setAppliedFilters({ ...appliedFilters, rating: "1" })
+          }/>
             <AiFillStar /> <AiOutlineStar /> <AiOutlineStar /> <AiOutlineStar />{" "}
             <AiOutlineStar />
           </div>
           <div className="rating-icons">
-            <input type="checkbox" />
+            <input type="checkbox"
+              onChange={(e) =>
+                setAppliedFilters({ ...appliedFilters, rating: "2" })
+              }
+
+            />
             <AiFillStar /> <AiFillStar /> <AiOutlineStar /> <AiOutlineStar />{" "}
             <AiOutlineStar />
           </div>
           <div className="rating-icons">
-            <input type="checkbox" />
+            <input type="checkbox"
+             onChange={(e) =>
+                setAppliedFilters({ ...appliedFilters, rating: "3"})
+              } />
             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiOutlineStar />{" "}
             <AiOutlineStar />
           </div>
           <div className="rating-icons">
-            <input type="checkbox" />
+            <input type="checkbox" 
+             onChange={(e) =>
+                setAppliedFilters({ ...appliedFilters, rating: "4" })
+              }/>
             <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />{" "}
             <AiOutlineStar />
           </div>

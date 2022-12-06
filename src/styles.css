@@ -42,10 +42,13 @@
 /* layout-container */
 .layout-container{
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 4fr;
+    min-height: 100vh;
 }
 .card-display-container {
     flex-wrap: wrap;
+    min-height: 90%;
+    overflow-y: scroll;
 }
 .results-block{
     align-items: center;
@@ -55,3 +58,13 @@
     background-color: var(--btn-bg);
     border: 2px solid var(--secondary-clr);
 }
+.card-display-parent{
+    height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 0.3rem;
+    padding: 0.2rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-clr);
+  }

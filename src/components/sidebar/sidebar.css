@@ -1,6 +1,7 @@
 .sidebar-display-container{
     align-items: flex-start;
-    height: 100vh;
+    max-height: 100vh;
+    overflow: scroll;
 }
 .sidebar-display-container button{
     border: none;
@@ -18,4 +19,7 @@
 .save-btn{
     color: var(--secondary-clr);
     font-weight: 600;
+}
+.sidebar-display-container input{
+    accent-color:var(--secondary-clr)
 }

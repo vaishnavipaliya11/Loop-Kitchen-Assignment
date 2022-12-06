@@ -7,10 +7,12 @@ import { filteredProducts } from "../utils/filteredProducts";
 
 export const Home = () => {
   const [appliedFilters, setAppliedFilters] = useState({
-    rating: [],
-    maxOrderValue: 2000,
+    rating: "",
+    maxOrderVolume: 2000,
     maxNoOfOrder: 10,
-    maxPrice: 10000,
+    dishPrice: 2000,
+    errorRate:0,
+    
   });
   const finalProducts=filteredProducts(menuData, appliedFilters)
   console.log(filteredProducts(menuData,appliedFilters),"f prod");
