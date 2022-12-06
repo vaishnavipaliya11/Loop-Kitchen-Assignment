@@ -1,7 +1,6 @@
 import { DishCard } from "../dishCard/DishesCard";
 import { menuData } from "../../data";
 import "../../styles.css";
-import { useState } from "react";
 export const CardDisplay = () => {
 
   return (
