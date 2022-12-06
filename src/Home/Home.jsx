@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../styles.css";
-import { CardDisplay } from "../components/CardsDisplay/CardDisplay";
 import { SideBar } from "../components/sidebar/Sidebar";
 import { menuData } from "../data";
 import { filteredProducts } from "../utils/filteredProducts";
@@ -35,7 +34,7 @@ export const Home = () => {
             </p>
           </label>
         </div>
-        <div className=" common-flex-row center card-display-container">
+        <div className=" common-flex-row  card-display-container">
           {finalProducts.map((data) => {
             return (
               <div>
@@ -48,7 +47,6 @@ export const Home = () => {
         </div>
       </div>
 
-      {/* <CardDisplay /> */}
     </div>
   );
 };

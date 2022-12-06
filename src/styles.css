@@ -49,6 +49,7 @@
     flex-wrap: wrap;
     min-height: 90%;
     overflow-y: scroll;
+    justify-content: center;
 }
 .results-block{
     align-items: center;

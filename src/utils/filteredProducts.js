@@ -1,5 +1,4 @@
 export const filteredProducts = (data, appliedFilters) => {
-  console.log(appliedFilters, "appliedFilters");
   let tempList = [...data];
 
   if (appliedFilters.maxNoOfOrder) {
@@ -18,7 +17,5 @@ export const filteredProducts = (data, appliedFilters) => {
           (product) => product.OrderVolume <= appliedFilters.minOrderVolume
         );
       }
-
-  console.log("templist", tempList);
   return tempList;
 };
