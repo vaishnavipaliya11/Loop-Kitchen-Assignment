@@ -14,7 +14,7 @@ export const Home = () => {
     errorRate:0,
     
   });
-  const finalProducts=filteredProducts(menuData, appliedFilters)
+  
   console.log(filteredProducts(menuData,appliedFilters),"f prod");
   return (
     <div className="layout-container">
