@@ -8,14 +8,13 @@ import { filteredProducts } from "../utils/filteredProducts";
 export const Home = () => {
   const [appliedFilters, setAppliedFilters] = useState({
     rating: "",
-    maxOrderVolume: 2000,
+    minOrderVolume: 10,
     maxNoOfOrder: 10,
-    dishPrice: 2000,
-    errorRate:0,
-    
+    minOrderValue: 450,
+    minErrorRate: 0,
   });
-  
-  console.log(filteredProducts(menuData,appliedFilters),"f prod");
+
+  console.log(filteredProducts(menuData, appliedFilters), "f prod");
   return (
     <div className="layout-container">
       <SideBar

@@ -60,14 +60,17 @@ export const SideBar = ({appliedFilters, setAppliedFilters}) => {
             setAppliedFilters({ ...appliedFilters, maxNoOfOrder: e.target.value })
           }/>
 
-          <h5>Order of Volume {appliedFilters.maxOrderVolume}</h5>
+          <h5>Order of Volume {appliedFilters.minOrderVolume}</h5>
           <input type="range" min="10" max="60" 
+          onChange={(e) =>
+            setAppliedFilters({ ...appliedFilters, minOrderVolume: e.target.value })
+          }
           />
 
-          <h5>Price range</h5>
+          <h5>Price range {appliedFilters.minOrderValue}</h5>
           <input type="range" min="100" max="2000"
           onChange={(e) =>
-            setAppliedFilters({ ...appliedFilters, dishPrice: e.target.value })
+            setAppliedFilters({ ...appliedFilters, minOrderValue: e.target.value })
           } />
         </div>
         <div>
