@@ -2,7 +2,7 @@
 .common-flex-row{
     display: flex;
 }
-.coomon-flex-column{
+.common-flex-column{
     display: flex;
     flex-direction: column;
 }
@@ -16,9 +16,21 @@
 .pd-sm{
     padding: 0.5rem;
 }
-
+.font-sm{
+    font-size: 14px;
+}
+.font-md{
+    font-size: 16px;
+}
 /* layout-container */
 .layout-container{
     display: grid;
     grid-template-columns: 2fr 3fr;
+}
+.card-display-container {
+    flex-wrap: wrap;
+}
+.results-block{
+    align-items: center;
+    justify-content: space-between;
 }

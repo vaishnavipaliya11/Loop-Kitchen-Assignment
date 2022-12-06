@@ -1,0 +1,30 @@
+.product-card-container{
+    margin: 0.5rem;
+    max-width: 15rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0.5rem;
+    font-size: 16px;
+}
+.product-card-container img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.product-card-container li{
+    list-style: none;
+}
+.description{
+    justify-content: space-around;
+    font-size: 14px;
+    margin: 5px;
+}
+.card-title h4{
+    margin: 0;
+    font-weight: 500;
+}
+.card-title{
+    align-items: flex-start;
+}
+.error{
+    color: red;
+}
