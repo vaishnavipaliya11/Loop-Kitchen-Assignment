@@ -25,14 +25,7 @@ export const Home = () => {
 
       <div className="common-flex-column card-display-parent">
         <div className="common-flex-row results-block">
-          <h4>Results</h4>
-          <label for="Sort by">
-            <p>
-              {" "}
-              Sort By
-              <input placeholder="sort by" />
-            </p>
-          </label>
+          <h4>Results ({finalProducts.length})</h4>
         </div>
         <div className=" common-flex-row  card-display-container">
           {finalProducts.map((data) => {
