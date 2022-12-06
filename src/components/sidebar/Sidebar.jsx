@@ -5,7 +5,7 @@ import {BsFileBarGraphFill} from "react-icons/bs"
 import {FaDigitalTachograph} from "react-icons/fa"
 import {HiPhotograph} from "react-icons/hi"
 
-export const SideBar = () => {
+export const SideBar = ({appliedFilters, setAppliedFilters}) => {
   return (
     <div className="common-flex-row">
       <div className="sidebar-icons-display common-flex-column">
@@ -35,11 +35,11 @@ export const SideBar = () => {
           </h3>
         </div>
       </div>
-      <div className="common-flex-column sidebar-display-container">
+      <div className="common-flex-column m-sm sidebar-display-container">
         <div>
           <h3>Item Performance</h3>
-          <button className="m-sm">Save this search</button>
-          <button>View saved search</button>
+          <button className="m-sm pd-sm save-btn">Save this search</button>
+          <button className=" pd-sm save-btn">View saved search</button>
         </div>
         <div className="common-flex-column start ">
           <h5>Error Rate</h5>
@@ -54,8 +54,11 @@ export const SideBar = () => {
           </div>
         </div>
         <div>
-          <h5>Number of orders</h5>
-          <input type="range" min="10" max="1000" />
+          <h5>Number of orders {appliedFilters.maxNoOfOrder}</h5>
+          <input type="range" min="10" max="100" 
+          onChange={(e) =>
+            setAppliedFilters({ ...appliedFilters, maxNoOfOrder: e.target.value })
+          }/>
 
           <h5>Order of value</h5>
           <input type="range" min="10" max="1000" />

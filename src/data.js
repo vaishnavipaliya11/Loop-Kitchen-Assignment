@@ -2,7 +2,7 @@ export  const menuData = [
   {
     "id":1,
     "Error_Rate": 19,
-    "Dispatch": 21,
+    "numOrder": 91,
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
@@ -10,7 +10,7 @@ export  const menuData = [
   },
   {
     "Error_Rate": 19,
-    "Dispatch": 21,
+    "numOrder": 72,
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
@@ -18,7 +18,7 @@ export  const menuData = [
   },
   {
     "Error_Rate": 19,
-    "Dispatch": 21,
+    "numOrder": 81,
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
@@ -26,7 +26,7 @@ export  const menuData = [
   },
   {
     "Error_Rate": 19,
-    "Dispatch": 21,
+    "numOrder": 51,
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
@@ -34,7 +34,7 @@ export  const menuData = [
   },
   {
     "Error_Rate": 19,
-    "Dispatch": 21,
+    "numOrder": 41,
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,
@@ -42,7 +42,7 @@ export  const menuData = [
   },
   {
     "Error_Rate": 19,
-    "Dispatch": 21,
+    "numOrder": 11,
     "Order_value": 5599,
     "Order_volume": 44,
     "Ratings": 3,

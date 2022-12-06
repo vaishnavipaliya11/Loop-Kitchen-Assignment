@@ -1,8 +1,7 @@
 import "../../styles.css";
 import "./cards.css";
 export const DishCard = ({ data }) => {
-  console.log("cardData", data);
-  const { Order_value, Dispatch, Error_Rate, Order_volume, Ratings, img } =
+  const { Order_value, numOrder, Error_Rate, Order_volume, Ratings, img } =
     data;
   return (
     <div className="common-flex-column product-card-container">
@@ -18,7 +17,7 @@ export const DishCard = ({ data }) => {
           Error_Rate <span>{Error_Rate}</span>{" "}
         </p>
         <p className="common-flex-row description">
-          Dispatch <span> {Dispatch}</span>
+          No Of Order <span> {numOrder}</span>
         </p>
 
         <p className="common-flex-row description">

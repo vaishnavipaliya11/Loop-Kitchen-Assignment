@@ -15,3 +15,7 @@
 .rating-icons{
     color: var(--secondary-clr)
 }
+.save-btn{
+    color: var(--secondary-clr);
+    font-weight: 600;
+}
