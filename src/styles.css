@@ -1,3 +1,8 @@
+:root{
+    --primary-clr:#31383F;
+    --secondary-clr:#6366f1;
+    --btn-bg:#cbd5e1;
+}
 /* utils */
 .common-flex-row{
     display: flex;
@@ -10,11 +15,23 @@
     justify-content: center;
     align-items: center;
 }
+.between{
+    justify-content: space-between;
+}
+.start{
+    align-items: flex-start;
+}
+.wrap{
+    flex-wrap: wrap;
+}
 .m-sm{
     margin: 0.5rem;
 }
 .pd-sm{
     padding: 0.5rem;
+}
+.pd-xs{
+    padding: 0.3rem;
 }
 .font-sm{
     font-size: 14px;
@@ -33,4 +50,8 @@
 .results-block{
     align-items: center;
     justify-content: space-between;
+}
+.sidebar-btn{
+    background-color: var(--btn-bg);
+    border: 2px solid var(--secondary-clr);
 }

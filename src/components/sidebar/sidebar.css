@@ -1,3 +1,17 @@
 .sidebar-display-container{
     align-items: flex-start;
+    height: 100vh;
+}
+.sidebar-display-container button{
+    border: none;
+}
+.sidebar-icons-display{
+    background-color: var(--primary-clr);
+    color: antiquewhite;
+    padding: 1rem;
+    height: 100vh;
+    justify-content: space-around;
+}
+.rating-icons{
+    color: var(--secondary-clr)
 }
